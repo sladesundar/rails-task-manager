@@ -1,0 +1,9 @@
+<h1>Edit Your Task, You Sloppy Sailor</h1>
+
+<%= form_for @task do |task| %>
+  <%= task.label :name %>
+  <%= task.text_field :name %>
+  <%= task.label :details %>
+  <%= task.text_field :details %>
+  <%= task.submit %>
+<% end %>

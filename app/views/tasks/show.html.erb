@@ -1,0 +1,9 @@
+<h1>This is the Task you need to do, Idiot!</h1>
+
+
+ <h3><%= @task.name %></h3>
+  <p><%= @task.details %></p>
+
+
+  <%= link_to 'Back to all tasks', tasks_path %>
+  <%= link_to 'Delete this task', task_path(@task), method: :delete %>
